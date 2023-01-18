@@ -7,16 +7,13 @@ import Navbar from "./components/layout/Navbar";
 function App() {
   return (
     <>
-      <div className="flex">
-        <Navbar />
-        <div className="flex flex-col overflow-hidden">
-          <Routes>
-            <Route path="/" element={<Navigate to="/login" replace />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/home" element={<Home />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Navbar />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+        </Route>
+      </Routes>
     </>
   )
 }

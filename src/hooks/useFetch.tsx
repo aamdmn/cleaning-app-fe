@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-interface Error {
+type Error = {
     message: string;
 }
 
+// TODO: pouzit fetch namiesto axios
+
 function useFetch(url: string) {
-    const [data, setData] = useState('');
+    const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<Error | null>(null);
 
