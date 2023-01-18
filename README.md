@@ -1,4 +1,4 @@
-##Ako spustit projekt
+## Ako spustit projekt
 
 1. `git clone https://github.com/aamdmn/cleaning-app-fe priecinok`
 2. `cd priecinok`
