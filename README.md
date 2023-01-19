@@ -1,9 +1,21 @@
-## Ako spustit projekt
+## Ako spustiť projekt
 
-1. `git clone https://github.com/aamdmn/cleaning-app-fe priecinok`
-2. `cd priecinok`
+1. Nainštaluj si nasledujúce programy:
 
-_Puzi len jeden package manager_
+- [Node.js](https://nodejs.org/en/download/)
+- [pnpm](https://pnpm.io/installation) (alebo yarn, alebo npm)
+- [git](https://git-scm.com/downloads)
 
-3. `npm install` // `yarn install` // `pnpm install`
-4. `npm start` //` yarn start` // `pnpm start`
+> pnpm je rychlejší ako yarn a npm, preto ho odporúčam
+
+2.
+
+```
+git clone https://github.com/aamdmn/cleaning-app-fe
+cd cleaning-app-fe
+```
+
+```
+pnpm install
+pnpm start
+```

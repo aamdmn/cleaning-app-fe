@@ -1,13 +1,10 @@
-import React from 'react'
-import OrderItem from '../components/order/OrderItem'
+import Orders from '../components/order/Orders'
 
 function Home() {
     return (
-        <>
-            <div className='w-full flex flex-col justify-center'>
-                <OrderItem />
-            </div>
-        </>
+        <div className='w-full flex flex-col justify-center'>
+            <Orders />
+        </div>
     )
 }
 
