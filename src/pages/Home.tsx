@@ -1,8 +1,9 @@
 import Orders from '../components/order/Orders'
+import '../css/pages/Home.css'
 
 function Home() {
     return (
-        <div className='w-full flex flex-col justify-center'>
+        <div className='container-home'>
             <Orders />
         </div>
     )

@@ -1,9 +1,10 @@
 export type OrderType = {
-    data: OrderData[]
-    status: string
+    data?: OrderData[]
+    status?: string
+    order?: OrderData
 }
 
-type OrderData = {
+export type OrderData = {
     id: number
     status: string
     date: string

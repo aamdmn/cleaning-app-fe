@@ -1,27 +1,28 @@
 import { Link, Outlet } from 'react-router-dom'
+import "./../../css/components/layout/Navbar.css"
 
 export default function Navbar() {
     return (
-        <div className='flex h-full overflow-hidden'>
-            <aside className="w-1/5 relative left-0" aria-label="Sidebar">
-                <div className="fixed w-1/6 h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className='container'>
+            <aside className="navbar" aria-label="Navbar">
+                <div className="navbar-container">
                     <ul className="space-y-2">
                         <li>
-                            <Link to="/" className="sidebar-link">
-                                <img src="./svgs/piediagram.svg" alt="" className="sidebar-icon" />
-                                <span className="ml-3">Dashboard</span>
+                            <Link to="/" className="link">
+                                <img src="./svgs/piediagram.svg" alt="" className="icon" />
+                                <span className="text">Dashboard</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="/home" className="sidebar-link">
-                                <img src="./svgs/login.svg" alt="login icon" className="sidebar-icon" />
-                                <span className="flex-1 ml-3 whitespace-nowrap">Prihlasit sa</span>
+                            <Link to="/home" className="link">
+                                <img src="./svgs/login.svg" alt="login icon" className="icon" />
+                                <span className="text">Prihlasit sa</span>
                             </Link>
                         </li>
                         <li>
-                            <a href="/login" className="sidebar-link">
-                                <img src='./svgs/table.svg' alt="logout icon" className="sidebar-icon" />
-                                <span className="flex-1 ml-3 whitespace-nowrap">Odhlasit sa</span>
+                            <a href="/login" className="link">
+                                <img src='./svgs/table.svg' alt="logout icon" className="icon" />
+                                <span className="text">Odhlasit sa</span>
                             </a>
                         </li>
                     </ul>

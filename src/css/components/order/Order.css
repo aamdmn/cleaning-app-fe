@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .text-order-data {
+        @apply text-slate-400;
+    }
+    .order-name {
+        @apply text-xl mt-2;
+    }
+    .order-item {
+        @apply overflow-y-hidden w-full m-2 p-5 bg-white shadow-lg sm:rounded-lg;
+    }
+}
