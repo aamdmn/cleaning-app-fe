@@ -1,6 +1,6 @@
-import useFetch from '../../hooks/useFetch'
-import { CustomerData } from '../../types/customer'
-import '../../css/components/order/Customer.css'
+import useFetch from '../../_utils/useFetch'
+import { CustomerData } from './types/customer'
+import './Customer.css'
 
 function Customer() {
     const { data, loading, error } = useFetch('http://cleanup.skus.im/cms/api/profile') // todo: environment variable

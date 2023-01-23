@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import Navbar from "./components/layout/Navbar";
+import Login from "./features/app/login/Login";
+import Navbar from "./features/app/navbar/Navbar";
+import Orders from "./features/app/Orders";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Route path="/" element={<Navigate to="/login" replace />} />
       <Route element={<Navbar />}>
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Orders />} />
       </Route>
     </Routes>
   )

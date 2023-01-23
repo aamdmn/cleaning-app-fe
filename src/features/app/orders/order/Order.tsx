@@ -1,5 +1,5 @@
-import { OrderType } from '../../types/order'
-import '../../css/components/order/Order.css'
+import { OrderType } from './types/order'
+import './Order.css'
 
 function Order({ order }: OrderType) {
 
